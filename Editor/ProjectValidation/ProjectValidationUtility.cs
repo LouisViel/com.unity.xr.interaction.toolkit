@@ -12,7 +12,7 @@ namespace UnityEditor.XR.Interaction.Toolkit.ProjectValidation
     /// </summary>
     internal static class ProjectValidationUtility
     {
-        const string k_SamplesRootDirectoryName = "Samples";
+        static readonly string k_SamplesRootDirectoryName = Path.Combine("ThirdParty", "Samples");
 
         /// <summary>
         /// Dictionary used to cache packages imported samples. The dictionary key is the package display name as displayed in package Samples directory.
